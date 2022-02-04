@@ -2,3 +2,4 @@
 - 🐣 Born in Aug 2000
 - 🌱 I’m currently learning Flutter, JavaScript, AI, Networking
 - 📫 You can reach me at aam_442@hotmail.com
+- 👀 Take a look at my website: www.adamsaab.me
