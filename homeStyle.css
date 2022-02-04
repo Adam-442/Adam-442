@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-weight: 800;
+    transition: 300ms ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f8f8f8;
+    background-image:  radial-gradient(#111 0.5px, transparent 0.5px), radial-gradient(#111 0.5px, #f8f8f8 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+    color: #56DBE3;
+}
+a {
+    font-style: normal;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 600px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.35);
+}
+
+.card-header {
+    margin-top: 35px;
+    align-self: flex-start;
+    width: 100%;
+}
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.profile:hover {
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.35);
+}
+.name {
+    margin-top: 27px;
+    margin-bottom: 7px;
+}
+
+.card-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 55px;
+    overflow: hidden;
+}
+.card-icons > div {
+    height: 55px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.iconify {
+    transition: 100ms ease-in-out;
+}
+.github:hover {
+    color: orange;
+}
+.instagram:hover {
+    color: purple;
+}
+.twitter:hover {
+    color: blue;
+}
+.mail:hover {
+    color: gray;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #56DBE3;
+    width: 100%;
+    height: 120px;
+}
+.cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 15px;
+    width: 80%;
+    height: 55%;
+}
+.cv:hover {
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
+}
+.cv > a {
+    text-decoration: none;
+    color: #f8f8f8;
+}
