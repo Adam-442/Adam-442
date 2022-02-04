@@ -78,19 +78,20 @@ a {
     margin-right: 10px;
 }
 .iconify {
-    transition: 100ms ease-in-out;
+    cursor: pointer;
+    transition: 1ms linear;
 }
 .github:hover {
-    color: orange;
+    color: rgb(233, 117, 10);
 }
 .instagram:hover {
-    color: purple;
+    color: rgb(187, 3, 187);
 }
 .twitter:hover {
-    color: blue;
+    color: rgb(0, 140, 255);
 }
 .mail:hover {
-    color: gray;
+    color: rgb(158, 158, 158);
 }
 
 .card-footer {
@@ -111,6 +112,7 @@ a {
     height: 55%;
 }
 .cv:hover {
+    cursor: pointer;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
 }
 .cv > a {
