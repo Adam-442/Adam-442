@@ -1,38 +1,62 @@
 * {
+    /* outline: solid red 1px;
+    outline-offset: -1px; */
     box-sizing: border-box;
-    font-family: Palatino ,"Roboto";
-    font-weight: 800;
+    font-family: 'Rakkas', Palatino;
+    font-weight: 400;
     margin: 0;
     padding: 0;
-    --second-color: #56DBE3;
 }
-body {
-    background-color: #f8f8f8;
-    background-image:  radial-gradient(#111 0.5px, transparent 0.5px), radial-gradient(#111 0.5px, #f8f8f8 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0,10px 10px;
-    transition: 300ms ease-in-out;
+.f_center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+body {
+    /* CENTER */
+    background-color: var(--background);
+    background-image: radial-gradient(#212121 0.6px, transparent 0.6px), radial-gradient(#212121 0.6px, transparent 0.6px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    transition: 300ms ease-in-out;
     text-align: center;
     min-height: 100vh;
     overflow: hidden;
 }
 h2 {
-    font-size: 32px;
+    font-size: 40px;
+    color: var(--text);
 }
 h3 {
-    font-size: 24px;
-    color: var(--second-color);
+    font-size: 30px;
+    color: var(--accent);
 }
 a {
     font-style: normal;
+    color: var(--text);
+}
+
+.moon {
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    position:absolute;
+    left: 2rem;
+    top: 2rem;
+    padding: 1rem;
+    background-color: var(--card);
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+#moon {
+    color: var(--text);
+}
+.moon:hover {
+    box-shadow: 1px 1px 2px 2px var(--accent);
 }
 
 .card {
     transition: 300ms ease-in-out;
-    background-color: white;
+    background-color: var(--card);
     box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 600px;
@@ -59,13 +83,12 @@ a {
     transition: 300ms ease-in-out;
 }
 .profile:hover {
-    box-shadow: 2px 2px 4px 4px var(--second-color);
+    box-shadow: 2px 2px 4px 4px var(--accent);
 }
-.name {
-    margin-top: 27px;
-    margin-bottom: 7px;
+#name {
+    margin-top: 20px;
 }
-.swe {
+#swe {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
 }
 
@@ -81,6 +104,7 @@ a {
     height: 65px;
     margin-right: 10px;
     margin-left: 10px;
+    color: var(--text);
 }
 .isLink {
     text-decoration: inherit;
@@ -97,47 +121,50 @@ a {
     box-shadow: 0px 50px 15px -17px #C1C1C1;
 }
 .github:hover {
-    color: rgb(233, 117, 10);
+    /* color: rgb(233, 117, 10); */
+    color: #c9510c;
 }
 .linkedin:hover {
-    color: rgb(0, 26, 255);
+    /* color: rgb(0, 26, 255); */
+    color:  #0072b1;
 }
 .twitter:hover {
-    color: rgb(0, 140, 255);
+    /* color: rgb(0, 140, 255); */
+    color: #00acee;
 }
 .mail:hover {
-    color: rgb(158, 158, 158);
+    /* color: rgb(175, 175, 175); */
+    color: var(--accent);
 }
 
-.card-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--second-color);
+.card-footer { 
+    /* CENTER */
+    background-color: var(--footer);
     width: 100%;
     height: 120px;
 }
 .cv {
+    /* CENTER */
     transition: 300ms ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+    background-color: var(--btn);
     border-radius: 15px;
     width: 80%;
     height: 55%;
 }
 .cv:hover {
     cursor: pointer;
-    background-color: #f8f8f8;
+    background-color: var(--btn-hover);
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
     margin-bottom: 5px;
 }
 .cv > a {
+    /* CENTER */
     text-decoration: none;
+    font-size: 23px;
     color: #f8f8f8;
+    height: 100%;
+    width: 100%;
 }
 .cv:hover a {
-    color: #111;
-    font-size: 18px;
+    color: var(--text-hover);
 }

@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas">
     <link rel="stylesheet" href="style.css">
-    <title>Hello I'm Adam</title>
+    <title>حياك الله</title>
 </head>
-<body>
+<body class="f_center">
+    <div class="moon" onclick="theme();">
+        <span class="iconify" data-icon="bi:moon-stars" id="moon"></span>
+    </div>
     <div class="card">
         <header class="card-header">
             <img class="profile" src="images/me.png" alt="my picture">
-            <h2 class="name">ADAM ABU SAAB</h2>
-            <h3 class="swe">SOFTWARE ENGINEER</h3>
+            <h2 id="name">آدم رضي أبوصعب</h2>
+            <h3 id="swe">مهندس برمجيات</h3>
         </header>
 
         <section class="card-icons">
@@ -35,17 +38,18 @@
         </div>
         <div class="mail">
             <!-- <a class="isLink" href="contact.html"> -->
-            <a class="isLink" href="mailto:aam_442@hotmail.com">
+            <a class="isLink" href="mailto:contact@adamsaab.me">
             <span class="iconify" data-icon="fluent:mail-24-filled"></span>
             </a>
         </div>
         </section>
 
-        <footer class="card-footer">
+        <footer class="card-footer f_center">
             <div class="cv">
-                <a href="CV.pdf" target="_blank">DOWNLOAD RESUME</a>
+                <a href="CV.pdf" target="_blank" class="f_center">تحميل السيرة الذاتية</a>
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
