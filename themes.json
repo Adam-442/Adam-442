@@ -1,0 +1,22 @@
+{
+    "light": {
+        "--accent": "#357657",
+        "--text": "black",
+        "--text-hover": "black",
+        "--background": "#f8f8f8",
+        "--card": "#f8f8f8",
+        "--footer": "#357657",
+        "--btn": "black",
+        "--btn-hover": "#f8f8f8"
+    },
+    "dark": {
+        "--accent": "#E6732B",
+        "--text": "#f8f8f8",
+        "--text-hover": "#f8f8f8",
+        "--background": "#424242",
+        "--card": "#212121",
+        "--footer": "#303030",
+        "--btn": "#424242",
+        "--btn-hover": "#E6732B"
+    }
+}
