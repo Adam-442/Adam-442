@@ -4,13 +4,11 @@ let themes;
 let t = 1;
 
 async function theme() {
-    console.log('fetching...');
     if (!themes) {
         await fetch('themes.json')
             .then((response) => response.json())
             .then((json) => themes = [json["light"], json["dark"]]);
     }
-    console.log('fetching Done!');
 
     t = (t)? 0: 1;
 
