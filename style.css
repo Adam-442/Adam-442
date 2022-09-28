@@ -186,6 +186,8 @@ a {
         position: relative;
         left: 0;
         top: 0;
+        max-width: 350px;
+        height: min-content;
         /* width: min-content; */
     }
     body {
