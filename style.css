@@ -186,17 +186,18 @@ a {
         position: relative;
         left: 0;
         top: 0;
-        max-width: 350px;
+        width: 350px;
         height: min-content;
+        margin-bottom: 10px;
         /* width: min-content; */
     }
     body {
-        display: grid;
-        grid-template-rows: min-content auto;
-        bottom: auto;
+        /* display: flex; */
+        flex-direction: column;
+        /* grid-template-rows: min-content auto; */
         /* place-items: center; */
     }
-    .card {
+    /* .card {
         top: 0;
-    }
+    } */
   }
