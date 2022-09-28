@@ -1,3 +1,12 @@
+/* * { outline: 1px solid rgba(255,0,0,.2);} :hover { outline: 1px solid rgba(255,0,0,0.6); } 
+* * { outline: 1px solid rgba(0,255,0,.2);} :hover { outline: 1px solid rgba(0,255,0,0.6); } 
+* * * { outline: 1px solid rgba(0,0,255,.2);} :hover { outline: 1px solid rgba(0,0,255,0.6); }
+* * * * { outline: 1px solid rgba(255,0,255,.2);} :hover { outline: 1px solid rgba(255,0,0,0.6); } 
+* * * * * { outline: 1px solid rgba(0,255,255,.2);} :hover { outline: 1px solid rgba(0,255,0,0.6); } 
+* * * * * * { outline: 1px solid rgba(255,255,0,.2);} :hover { outline: 1px solid rgba(0,0,255,0.6); }
+* * * * * * * { outline: 1px solid rgba(255,0,0,.2);} :hover { outline: 1px solid rgba(255,0,0,0.6); } 
+* * * * * * * * { outline: 1px solid rgba(0,255,0,.2);} :hover { outline: 1px solid rgba(0,255,0,0.6); } 
+* * * * * * * * * { outline: 1px solid rgba(0,0,255,.2);} :hover { outline: 1px solid rgba(0,0,255,0.6); } */
 * {
     /* outline: solid red 1px;
     outline-offset: -1px; */
@@ -13,6 +22,9 @@
     align-items: center;
 }
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* CENTER */
     background-color: var(--background);
     background-image: radial-gradient(#212121 0.6px, transparent 0.6px), radial-gradient(#212121 0.6px, transparent 0.6px);
@@ -75,14 +87,14 @@ a {
     align-self: flex-start;
     width: 100%;
 }
-.profile {
+#pfp {
     width: 200px;
     height: 200px;
     border-radius: 100px;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
     transition: 300ms ease-in-out;
 }
-.profile:hover {
+#pfp:hover {
     box-shadow: 2px 2px 4px 4px var(--accent);
 }
 #name {
@@ -168,3 +180,21 @@ a {
 .cv:hover a {
     color: var(--text-hover);
 }
+
+@media only screen and (max-width: 600px) {
+    .moon {
+        position: relative;
+        left: 0;
+        top: 0;
+        /* width: min-content; */
+    }
+    body {
+        display: grid;
+        grid-template-rows: min-content auto;
+        bottom: auto;
+        /* place-items: center; */
+    }
+    .card {
+        top: 0;
+    }
+  }
