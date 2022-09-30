@@ -1,7 +1,10 @@
-const PICS = ['images/me.png', 'images/me2.png'];
+let PICS = ['images/me.png', 'images/me2.png'];
 const ROOT = document.documentElement;
 let themes;
 let t = 1;
+
+// Preload Images
+PICS.forEach(pic => {let im = new Image(); im.src = pic;})
 
 async function theme() {
     if (!themes) {

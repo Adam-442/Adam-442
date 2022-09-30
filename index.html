@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJYGR668T8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WJYGR668T8');
+    </script>
+    <!--  -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas">
     <link rel="stylesheet" href="style.css">
+    <!--  -->
     <title>حياك الله</title>
 </head>
+
 <body onload="theme();">
-    <div class="moon" onclick="theme();">
-        <span class="iconify" data-icon="bi:moon-stars" id="moon"></span>
-    </div>
     <div class="card">
+        <div class="moon" onclick="theme();">
+            <span class="iconify" data-icon="bi:moon-stars" id="moon"></span>
+        </div>
+        
         <header class="card-header">
             <img id="pfp" src="images/me.png" alt="my picture">
             <h2 id="name">آدم رضي أبوصعب</h2>
@@ -21,27 +36,27 @@
         </header>
 
         <section class="card-icons">
-        <div class="github">
-            <a class="isLink" href="https://www.github.com/adam-442" target="_blank">
-            <span class="iconify" data-icon="akar-icons:github-fill"></span>
-            </a>
-        </div>
-        <div class="linkedin">
-            <a class="isLink" href="https://www.linkedin.com/in/adam-abu-saab-02b877209" target="_blank">
-            <span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span>
-            </a>
-        </div>
-        <div class="twitter">
-            <a class="isLink" href="https://www.twitter.com/adam_Radhi" target="_blank">
-            <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
-            </a>
-        </div>
-        <div class="mail">
-            <!-- <a class="isLink" href="contact.html"> -->
-            <a class="isLink" href="mailto:contact@adamsaab.me">
-            <span class="iconify" data-icon="fluent:mail-24-filled"></span>
-            </a>
-        </div>
+            <div class="github">
+                <a class="isLink" href="https://www.github.com/adam-442" target="_blank">
+                    <span class="iconify" data-icon="akar-icons:github-fill"></span>
+                </a>
+            </div>
+            <div class="linkedin">
+                <a class="isLink" href="https://www.linkedin.com/in/adam-abu-saab-02b877209" target="_blank">
+                    <span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span>
+                </a>
+            </div>
+            <div class="twitter">
+                <a class="isLink" href="https://www.twitter.com/adam_Radhi" target="_blank">
+                    <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
+                </a>
+            </div>
+            <div class="mail">
+                <!-- <a class="isLink" href="contact.html"> -->
+                <a class="isLink" href="mailto:contact@adamsaab.me">
+                    <span class="iconify" data-icon="fluent:mail-24-filled"></span>
+                </a>
+            </div>
         </section>
 
         <footer class="card-footer f_center">
@@ -52,4 +67,5 @@
     </div>
     <script src="script.js" type="text/javascript"></script>
 </body>
+
 </html>

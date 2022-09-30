@@ -51,7 +51,7 @@ a {
 .moon {
     cursor: pointer;
     transition: 300ms ease-in-out;
-    position:absolute;
+    position: fixed;
     left: 2rem;
     top: 2rem;
     padding: 1rem;
@@ -183,21 +183,14 @@ a {
 
 @media only screen and (max-width: 600px) {
     .moon {
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 350px;
-        height: min-content;
-        margin-bottom: 10px;
-        /* width: min-content; */
+        position: absolute;
+        margin-top: 10px;
+        left: initial;
+        margin-left: 10px;
     }
     body {
-        /* display: flex; */
+        padding-top: 2rem;
         flex-direction: column;
-        /* grid-template-rows: min-content auto; */
-        /* place-items: center; */
+        justify-content: flex-start;
     }
-    /* .card {
-        top: 0;
-    } */
   }
