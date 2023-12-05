@@ -11,8 +11,8 @@
     /* outline: solid red 1px;
     outline-offset: -1px; */
     box-sizing: border-box;
-    font-family: 'Rakkas', Palatino;
-    font-weight: 400;
+    font-family: 'Rubik', Palatino;
+    font-weight: 300;
     margin: 0;
     padding: 0;
 }
@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     /* CENTER */
     background-color: var(--background);
     background-image: radial-gradient(#212121 0.6px, transparent 0.6px), radial-gradient(#212121 0.6px, transparent 0.6px);
@@ -33,50 +34,96 @@ body {
     transition: 300ms ease-in-out;
     text-align: center;
     min-height: 100vh;
-    overflow: hidden;
+}
+p {
+    font-size: 17px;
+    text-align: justify;
+    /* word-spacing: 0.2rem; */
+    color: var(--text);
+    transition: 200ms ease-in-out;
+}
+.rtl {
+    direction: rtl;
 }
 h2 {
-    font-size: 40px;
+    font-size: 39px;
+    font-family: 'Rakkas';
     color: var(--text);
+    transition: 200ms ease-in-out;
 }
 h3 {
-    font-size: 30px;
+    font-size: 26px;
     color: var(--accent);
+    transition: 200ms ease-in-out;
 }
 a {
     font-style: normal;
     color: var(--text);
+    transition: 200ms ease-in-out;
 }
 
-.moon {
+.switch {
     cursor: pointer;
     transition: 300ms ease-in-out;
-    position: fixed;
-    left: 2rem;
-    top: 2rem;
-    padding: 1rem;
-    background-color: var(--card);
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    width: 3rem;
+    /* background-color: var(--card); */
+    /* box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25); */
     border-radius: 5px;
 }
-#moon {
-    color: var(--text);
-}
-.moon:hover {
+/* .switch:hover {
     box-shadow: 1px 1px 2px 2px var(--accent);
+} */
+.switch_text {
+    color: var(--text);
+    font-size: 2rem;
+}
+.switch_text:hover {
+    color: var(--accent);
+    font-size: 2.3rem;
+}
+#moon {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#lang {
+    margin-right: 10px;
+    margin-top: 10px;
+    right: 0;
+}
+#link {
+    right: 0;
 }
 
+#main_card {
+    height: 600px;
+    width: 350px;
+}
+#projects-card {
+    /* height: 300px; */
+    height: max-content;
+    width: 350px;
+    /* padding-top: 1.25rem; */
+    /* padding-bottom: 1.25rem; */
+    cursor: pointer;
+}
+#projects-card:hover {
+    box-shadow: 2px 2px 4px 4px var(--accent);
+}
+#projects-card:hover > #link > .iconify {
+    color: var(--accent);
+    font-size: 2.3rem;
+}
 .card {
     transition: 300ms ease-in-out;
     background-color: var(--card);
     box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    height: 600px;
-    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    position: relative;
 }
 .card:hover {
     box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.35);
@@ -128,6 +175,7 @@ a {
     transition: 200ms ease-out;
     background-color: transparent;
 }
+
 .card-icons > div:hover .iconify {
     margin-top: 0px;
     box-shadow: 0px 50px 15px -17px #C1C1C1;
@@ -146,7 +194,16 @@ a {
 }
 .mail:hover {
     /* color: rgb(175, 175, 175); */
-    color: var(--accent);
+    /* color: var(--accent); */
+    animation: forwards 200ms linear crossfade;
+}
+@keyframes crossfade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .card-footer { 
@@ -181,16 +238,53 @@ a {
     color: var(--text-hover);
 }
 
-@media only screen and (max-width: 600px) {
-    .moon {
-        position: absolute;
-        margin-top: 10px;
-        left: initial;
-        margin-left: 10px;
-    }
+.projects_list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1.5rem;
+    margin: 1.25rem;
+    list-style: none;
+}
+#project_link {
+    text-decoration: none;
+}
+
+#icons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    cursor: default;
+}
+.tech_icon {
+    width: 50px;
+    height: 50px;
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+}
+.tech_icon:hover {
+    -webkit-filter: grayscale(0) invert(0);
+    filter: grayscale(0) invert(0);
+}
+.tech_icon:hover + .icon_desc {
+    opacity: 100;
+    visibility: visible;
+}
+.icon_desc {
+    position: absolute;
+    opacity: 0;
+    transition: 150ms linear;
+    visibility: hidden;
+    transform: translateY(-0.5rem);
+}
+
+@media only screen and (max-width: 640px) {
     body {
         padding-top: 2rem;
         flex-direction: column;
         justify-content: flex-start;
     }
-  }
+}

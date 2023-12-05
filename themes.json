@@ -10,13 +10,13 @@
         "--btn-hover": "#f8f8f8"
     },
     "dark": {
-        "--accent": "#E6732B",
+        "--accent": "#4393E4",
         "--text": "#f8f8f8",
         "--text-hover": "#f8f8f8",
         "--background": "#424242",
         "--card": "#212121",
         "--footer": "#303030",
         "--btn": "#424242",
-        "--btn-hover": "#E6732B"
+        "--btn-hover": "#4393E4"
     }
 }

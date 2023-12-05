@@ -18,15 +18,21 @@
     <!--  -->
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300">
     <link rel="stylesheet" href="style.css">
     <!--  -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>حياك الله</title>
 </head>
 
 <body onload="theme();">
-    <div class="card">
-        <div class="moon" onclick="theme();">
-            <span class="iconify" data-icon="bi:moon-stars" id="moon"></span>
+    <div id="main_card" class="card">
+        <div class="switch" id="moon" onclick="theme();">
+            <span class="iconify switch_text" data-icon="material-symbols-light:dark-mode-outline-rounded"></span>
+        </div>
+
+        <div class="switch" id="lang" onclick="language();">
+            <span class="iconify switch_text" data-icon="material-symbols-light:language"></span>
         </div>
         
         <header class="card-header">
@@ -38,12 +44,12 @@
         <section class="card-icons">
             <div class="github">
                 <a class="isLink" href="https://www.github.com/adam-442" target="_blank">
-                    <span class="iconify" data-icon="akar-icons:github-fill"></span>
+                    <span class="iconify" data-icon="line-md:github"></span>
                 </a>
             </div>
             <div class="linkedin">
                 <a class="isLink" href="https://www.linkedin.com/in/adam-abu-saab-02b877209" target="_blank">
-                    <span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span>
+                    <span class="iconify" data-icon="line-md:linkedin"></span>
                 </a>
             </div>
             <!-- <div class="twitter">
@@ -54,16 +60,52 @@
             <div class="mail">
                 <!-- <a class="isLink" href="contact.html"> -->
                 <a class="isLink" href="mailto:contact@adamsaab.me">
-                    <span class="iconify" data-icon="fluent:mail-24-filled"></span>
+                    <span class="iconify" data-icon="line-md:email-twotone" id="mail_iconify" onmouseover="openMailIcon()" onmouseleave="closeMailIcon()"></span>
                 </a>
             </div>
         </section>
 
         <footer class="card-footer f_center">
             <div class="cv">
-                <a href="CV.pdf" target="_blank" class="f_center">تحميل السيرة الذاتية</a>
+                <a href="CV.pdf" target="_blank" class="f_center" id="cv_button">تحميل السيرة الذاتية</a>
             </div>
         </footer>
+    </div>
+
+    <div class="">
+        <h2 id="look_text">خذ لك طلة</h2>
+        <a href="https://adam-442.github.io/WeatherForecast/" target="_blank" id="project_link">
+        <div id="projects-card" class="card">
+
+            <div class="switch" id="link" onclick="">
+                <span class="iconify switch_text" data-icon="material-symbols-light:open-in-new"></span>
+            </div>
+
+            <ul class="projects_list">
+                <li><h3 id="project_title">مشروع الطقس</h3></li>
+                <li><p id="project_desc" class="rtl">تحديثات الطقس على مدار الساعة. مزود بميزة البحث عن المدينة مع إكمال تلقائي للإسم. الموقع يتكيف مع مختلف الأجهزة.</p></li>
+                <li id="icons">
+                    <p id="using_text" class="rtl">باستخدام:</p>
+                    <div class="">
+                        <img class="tech_icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+                        <p class="icon_desc">React</p>
+                    </div>
+                    <div class="">
+                        <img class="tech_icon" src="https://www.svgrepo.com/show/303557/redux-logo.svg" alt="Redux">
+                        <p class="icon_desc">Redux</p>
+                    </div>
+                    <div class="">
+                        <img class="tech_icon" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind">
+                        <p class="icon_desc">Tailwind</p>
+                    </div>
+                    <div class="">
+                        <img class="tech_icon" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Logo_material_design.svg" alt="Material UI">
+                        <p class="icon_desc">Material UI</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </a>
     </div>
     <script src="script.js" type="text/javascript"></script>
 </body>

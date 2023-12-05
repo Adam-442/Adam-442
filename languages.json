@@ -1,0 +1,20 @@
+{
+    "ar": {
+        "name": "آدم رضي أبوصعب",
+        "job": "مهندس برمجيات",
+        "cv": "تحميل السيرة الذاتية",
+        "look": "خذ لك طلة",
+        "project": "مشروع الطقس",
+        "project_description": "تحديثات الطقس على مدار الساعة. مزود بميزة البحث عن المدينة مع إكمال تلقائي للإسم. الموقع يتكيف مع مختلف الأجهزة.",
+        "using": "استخدمت:"
+    },
+    "en": {
+        "name": "Adam Abu Saab",
+        "job": "Software Engineer",
+        "cv": "Download CV",
+        "look": "Take A Look",
+        "project": "WeatherForcast",
+        "project_description": "Real-time weather updates. Includes a city search feature with auto-complete. Website adapts to various devices.",
+        "using": "Using:"
+    }
+}
